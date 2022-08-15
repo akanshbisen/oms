@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "ContactUs";
+}
+
+
+<body style="background-color:black;color:blanchedalmond">
+    <div style="float: right;">
+        <a class="btn" style="color:blanchedalmond" href="/">Home</a> | <a class="btn" style="color:blanchedalmond" href="/home/aboutus">About Us</a> | <a class="btn" style="color:blanchedalmond" href="/userproduct/index">All Medicines</a> | <a class="btn" style="color:blanchedalmond" href="/">User Login</a> | <a class="btn" style="color:blanchedalmond" href="/account/adminlogin">Admin Login</a> | <a class="btn" style="color:blanchedalmond" href="/">Register</a>
+    </div>
+    <div>
+        <h2 style="padding-top:1%;color:white">Online Medicine Store</h2>
+    </div>
+    <br />
+    <br />
+    <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 2px 15px; border-radius: 10px; ">
+        <h2 style="padding-left:5%">ContactUs</h2>
+        <br />
+        <br />
+        <div class="container" >
+            <div class="row">
+                <div class="col" style="width:30%;float:left;padding-left:10%">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <i class="fa fa-envelope" style="padding-left:10%"></i> Contact us.
+                        </div>
+                        <br />
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="mx-auto">
+                                    <button type="submit" class="btn btn-primary text-right">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4" style="width:30%;float:left;padding-left:10%;margin-left:20%">
+                    <div class="card">
+                        <div class="card-header " style="background-color:green"><i class="fa fa-home" style="padding-left:10%"></i> Address</div>
+                        <br />
+                        <div class="card-body" style="padding-left:10%">
+                            <p>Near India Gate</p>
+                            <p>110001 New Delhi</p>
+                            <p>India</p>
+                            <p>Email : oms@gmail.com</p>
+                            <p>Tel. +91 9977886622</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+    </fieldset>
+</body>
+

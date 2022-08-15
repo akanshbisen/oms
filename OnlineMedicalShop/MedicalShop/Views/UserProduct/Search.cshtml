@@ -1,0 +1,68 @@
+﻿@using BOL;
+@{
+    ViewBag.Title = "Search";
+}
+
+
+<body style="background-color: paleturquoise; color: black">
+    <div style="float: right;">
+        <a class="btn" style="color:black" href="/">Home</a> | <a class="btn" style="color: black" href="/home/aboutus">About Us</a> | <a class="btn" style="color: black" href="/">User Login</a> | <a class="btn" style="color: black" href="/account/adminlogin">Admin Login</a> | <a class="btn" style="color: black" href="/">Register</a>
+    </div>
+    <div style="float:left;">
+        <h2>Online Medicine Store</h2>
+    </div>
+
+    <br />
+    <br />
+    <div style="margin-top:5%">
+        <h3 style="margin-left:2%"><i>Available @ViewBag.cat</i></h3><br />
+
+        <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 2px 15px; border-radius: 10px; ">
+
+            <table width="105%" height="10%" style="text-align:center; border-spacing:10px 10px;border-collapse:separate;">
+                <tr>
+                    <th style="text-align: center; color: darkorange">Id</th>
+                    <th style="text-align: center; color: darkorange ">Name</th>
+                    <th style="text-align: center; color: darkorange ">Company</th>
+                    <th style="text-align: center; color: darkorange">Category</th>
+                    @*  <th style="text-align: center; color: darkorange ">Description</th>*@
+                    <th style="text-align: center; color: darkorange ">Quantity</th>
+                    <th style="text-align: center; color: darkorange ">Price</th>
+                    <th style="text-align: center; color: darkorange">Image</th>
+                    <th style="text-align:center"></th>
+                    <th style="text-align:center"></th>
+                </tr>
+                @{
+                    foreach (Product product in ViewBag.allItems)
+                    {
+                        <tr>
+                            <td style="background-color:darkorchid;border-radius:10px">@product.Pid </td>
+                            <td>@product.Name</td>
+                            <td>@product.Company</td>
+                            <td>@product.Category</td>
+                            @* <td>@product.Description</td>*@
+                            <td>@product.Quantity</td>
+                            <td>@product.Price</td>
+                            <td><img src="@product.Imgurl" width="40" height="40" style="border-radius:4px" /></td>
+                            <td>
+                                <a class="btn btn-info" href="/userproduct/medicinebyid/@product.Pid">View</a>
+                                <a class="btn btn-warning" href="/">Buy</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </fieldset>
+        <br />
+        <br />
+        <div style="margin-left:">
+            <a class="btn btn-primary" style="color:blanchedalmond;padding-left:5%;padding-right:5%" href="/">Back</a>
+        </div>
+
+    </div>
+</body>
+
+
+
+
+

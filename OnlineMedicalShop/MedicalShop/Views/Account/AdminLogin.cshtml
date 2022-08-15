@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "AdminLogin";
+}
+
+
+<body style="background-color:black; color:blanchedalmond; ">
+    <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 4px 5px; border-radius: 10px;">
+        <div style="height:600px">
+            <div style="float: right;">
+                <a class="btn" style="color:blanchedalmond" href="/">Home</a> | <a class="btn" style="color:blanchedalmond" href="/home/aboutus">About Us</a> | <a class="btn" style="color:blanchedalmond" href="/account/userlogin">User Login</a> 
+            </div>
+            <div>
+                <h2>ONLINE MEDICINE STORE</h2>
+            </div>
+
+
+
+            <div style="width:auto; margin-left:350px; margin-top:100px">
+
+                <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 4px 5px; border-radius: 10px;margin-right:450px">
+
+                    <h2 style="margin-left:20px">Admin Login</h2>
+                    <br />
+                    <div class="container">
+                        <h4 style="color:red">@ViewBag.message</h4>
+                        <form method="post" action="/account/adminlogin" onsubmit="return validate()">
+
+                            <div class="form-group">
+                                <span style="color:red">*</span>
+                                <label for="email">Email:</label>
+                                <span id="sp1" style="color:red;"></span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <span style="color:red">*</span>
+                                <label for="password">Password:</label>
+                                <span id="sp2" style="color:red"></span>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                            </div>
+
+                            <div style="width:50px">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                                <br />
+                                <br />
+                              
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+        </fieldset>
+</body>
+<script src="~/Scripts/validate.js"></script>
+

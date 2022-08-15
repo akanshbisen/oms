@@ -1,0 +1,6 @@
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\bin\Debug\BOL.dll
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\bin\Debug\BOL.pdb
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\obj\Debug\BOL.dll
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\obj\Debug\BOL.pdb
+E:\CDAC - IACSD\PG-DAC\Project\OMS\OnlineMedicalShop\BOL\obj\Debug\BOL.csproj.AssemblyReference.cache

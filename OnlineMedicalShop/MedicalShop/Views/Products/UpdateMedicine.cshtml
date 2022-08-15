@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "UpdateMedicine";
+}
+
+<body style="background-color:black;color:blanchedalmond">
+    <div style="float:left;width:100%;">
+        <div style="width:85%;float:left">
+            <h2 style="color:blanchedalmond">Online Medicine Store</h2>
+        </div>
+        <div style="float:left;margin-top:1%">
+            <a class="btn btn-primary" href="/products/index">Back</a>
+            <a class="btn btn-primary" href="/">Logout</a>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 8%; ">
+        <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 2px 15px; border-radius: 10px; ">
+            <h3 style="padding-left: 3%; text-shadow: 5px 10px 5px darkgoldenrod ">Edit Details of @ViewBag.medicine.Name</h3>
+            <h3 style="color: lawngreen; padding-left: 3%">@ViewBag.success</h3>
+            <h3 style="color: lawngreen; padding-left: 3%">@ViewBag.failure</h3>
+            <form method="post" action="/products/updatemedicine/@ViewBag.medicine.Pid" style="padding-left:35%" onsubmit="return validate()">
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="name">Name:</label>
+                    <span style="color:red" id="sp1"></span>
+                    <input type="text" class="form-control" id="name" value="@ViewBag.medicine.Name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="company">Company:</label>
+                    <span style="color:red" id="sp2"></span>
+                    <input type="text" class="form-control" id="company" value="@ViewBag.medicine.Company" name="company">
+                </div>
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="category">Category:</label>
+                    <span style="color:red" id="sp3"></span>
+                    <input type="text" class="form-control" id="category" value="@ViewBag.medicine.Category" name="category">
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="quantity">Quantity:</label>
+                    <span style="color:red" id="sp4"></span>
+                    <input type="number" class="form-control" id="quantity" value="@ViewBag.medicine.Quantity" name="quantity">
+                </div>
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="price">Price:</label>
+                    <span style="color:red" id="sp5"></span>
+                    <input type="number" class="form-control" id="price" value="@ViewBag.medicine.Price" name="price">
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="description">Description:</label>
+                    <span style="color:red" id="sp6"></span>
+                    @*<input type="text" class="form-control" id="description" value="@ViewBag.medicine.Description" name="description">*@
+                    <textarea id="description" class="form-control" rows="4" name="description">@ViewBag.medicine.Description</textarea>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="imgurl">Image Url:</label>
+                    <span style="color:red" id="sp7"></span>
+                    <input type="text" class="form-control" id="imgurl" value="@ViewBag.medicine.Imgurl" name="imgurl">
+
+                </div>
+                <div class="form-group" style="margin-left:7%">
+                    <button type="submit" class="btn btn-success" style="padding-left: 7%; padding-right: 7%">Update</button>
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+<script src="~/Scripts/InsertAndUpdate.js"></script>

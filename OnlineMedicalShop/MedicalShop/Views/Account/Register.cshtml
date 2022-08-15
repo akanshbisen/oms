@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Register user";
+}
+
+<body style="background-color:black;color:blanchedalmond;">
+    <div style="float:left;width:100%;">
+        <div style="width:85%;float:left">
+            <h2 style="color:blanchedalmond">Online Medicine Store</h2>
+        </div>
+        <div style="float:left;margin-top:1%;margin-left:5%">
+            <a class="btn btn-primary" href="/">Back</a>
+           
+        </div>
+    </div>
+    <br />
+    
+    <div class="container" style="margin-top: 8%;">
+        <h3><i>User Registration</i></h3>
+        <fieldset style="background-color:black;color:blanchedalmond;box-shadow:teal 2px 2px 15px; border-radius: 10px; ">
+            <h3 style="padding-left: 3%; text-shadow: 5px 10px 5px darkgoldenrod ">Insert Your Details</h3>
+            <h3 style="color: lawngreen; padding-left: 3%">@ViewBag.success</h3>
+            <h3 style="color: red; padding-left: 3%">@ViewBag.failure</h3>
+            <form method="post" action="/account/register" style="padding-left:35%" onsubmit="return validate()">
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="name">First Name:</label>
+                    <span style="color:red" id="sp1"></span>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="company">Last Name:</label>
+                    <span style="color:red" id="sp2"></span>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="category">Email:</label>
+                    <span style="color:red" id="sp3"></span>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="password">Password:</label>
+                    <span style="color:red" id="sp4"></span>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="address">Address:</label>
+                    <span style="color:red" id="sp5"></span>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="city">City:</label>
+                    <span style="color:red" id="sp6"></span>
+                    <input type="text" class="form-control" id="city" placeholder="Enter City" name="city" required>
+                </div>
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="state">State:</label>
+                    <span style="color:red" id="sp7"></span>
+                    <input type="text" class="form-control" id="state" placeholder="Enter State" name="state" required>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="country">Country:</label>
+                    <span style="color:red" id="sp8"></span>
+                    <input type="text" class="form-control" id="country" placeholder="Enter Country" name="country" required>
+                </div>
+
+                <div class="form-group">
+                    <span style="color:red">*</span>
+                    <label for="pincode">Pincode:</label>
+                    <span style="color:red" id="sp9"></span>
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter Pincode" name="pincode" required>
+                </div>
+                <div class="form-group" style="margin-left:7%">
+                    <button type="submit" class="btn btn-success" style="padding-left: 7%; padding-right: 7%">Submit</button>
+                </div>
+            </form>
+
+        </fieldset>
+
+    </div>
+</body>
+
+

@@ -1,0 +1,323 @@
+﻿
+@{
+    ViewBag.Title = "OMS Home";
+}
+
+<body style="background-color:teal; color:blanchedalmond">
+    <div width:auto;>
+
+        <div style="float: right;">
+            <a class="btn" style="color:blanchedalmond" href="/">Home</a> | <a class="btn" style="color:blanchedalmond" href="/home/aboutus">About Us</a> | <a class="btn" style="color:blanchedalmond" href="/userproduct/index">All Medicines</a> | <a class="btn" style="color:blanchedalmond" href="/account/userlogin">User Login</a> | <a class="btn" style="color:blanchedalmond" href="/account/adminlogin">Admin Login</a> | <a class="btn" style="color:blanchedalmond" href="/account/register">Register</a>
+        </div>
+        <br>
+        <div>
+            <form method="post" action="/userproduct/search">
+                <table style="width:1150px">
+                    <tr>
+                        <td>
+                            <h2>ONLINE MEDICINE STORE</h2>
+                            <h5>A Complete solution for Online medicine shopping, orders, products and inventory</h5>
+                        </td>
+                        <td class="col-xs-3">
+                            <input class="form-control" type="text" name="search" id="search" placeholder="Search Here" required />
+                        </td>
+                        <td>
+                            <button class="btn btn-warning" type="submit" name="btn" id="btn" value="submit">Search</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="row" style="padding-bottom:10px;margin-left:1px;padding-right:10px">
+            <table>
+                <tr style="background-color:white">
+
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/">Home</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/home/aboutus">About Us</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/userproduct/index">All Medicines</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/userproduct/category?category=Tablet">Tablets</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/userproduct/category?category=Syrup">Syrups</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/userproduct/category?category=Ointment">Ointments</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/account/userlogin">User Login</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/account/adminlogin">Admin Login</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/account/register">Register</a></td>
+                    <td class="col-lg-1"><a class="btn" style="color: teal" href="/home/contactus">Contact Us</a></td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div style="background-color: white">
+            <div style="padding:10px">
+                <img src="~/Images/f1.jpg" width="1120" height="200" style=" border-radius:5px " />
+            </div>
+        </div>
+
+        <div style="background-color: whitesmoke;  margin-top: 10px; height:1200px">
+
+            
+
+            <div style="float:right; margin-right:30px; width:600px">
+
+                <br />
+                <h2 style="color: darkslategrey; margin-left: 40px">Online Medicine Store</h2>
+
+                <div style="float:left; margin:10px; width:200px; height:300px">
+
+                    <img src="~/Images/Cipla.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Cipla</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Vitamin</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 100</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div style="float:left; margin:10px; width:200px; height:300px; margin-left:120px; ">
+
+                    <img src="~/Images/ascoril.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Ascoril</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Syrup</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 80</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+                <div style="float: left; margin: 10px; width: 200px; height: 300px; margin-top: 40px">
+
+                    <img src="~/Images/moov.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Moov</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Ointment</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 70</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+                <div style="float: left; margin: 10px; width: 200px; height: 300px; margin-left: 120px; margin-top: 40px ">
+
+                    <img src="~/Images/dolo.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Dolo</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Tablet</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 90</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+                <div style="float:left; margin:10px; width:200px; height:300px; margin-top: 40px" >
+
+                    <img src="~/Images/crocin.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Crocin</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Tablet</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 30</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+                <div style="float: left; margin: 10px; width: 200px; height: 300px; margin-left: 120px; margin-top: 40px" >
+
+                    <img src="~/Images/bron.jpg" width="150" height="150" />
+                    <table>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Product :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Broconoid</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Category :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Syrup</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 style="color:darkslategrey;">Price :&nbsp;</h4>
+                            </td>
+                            <td>
+                                <h4 style="color:darkslategrey;">Rs 120</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="/userproduct/index" class="btn btn-primary">View Details</a>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+           
+            </div>
+
+
+            <br />
+            <h2 style="color:darkslategrey; margin-left:40px">Our Brands</h2>
+
+            <a href="/">
+                <img src="~/Images/b2.png" width="100" height="100" style="border: 2px solid grey; border-radius:4px;  margin:10px" />
+            </a>
+            <a href="/">
+                <img src="~/Images/b1.png" width="100" height="100" style="border: 2px solid grey; border-radius: 4px; " />
+            </a>
+            
+            <div style="padding-top:3px;">
+                <a href="/">
+                    <img src="~/Images/b3.png" width="100" height="100" style="border: 2px solid grey; border-radius: 4px; margin: 10px " />
+                </a>
+                <a href="/">
+                    <img src="~/Images/b4.png" width="100" height="100" style="border: 2px solid grey; border-radius: 4px; " />
+                </a>
+            </div>
+
+
+            </div>
+            
+        </div>
+       
+</body>
+
+
